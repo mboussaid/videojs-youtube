@@ -324,6 +324,7 @@ THE SOFTWARE. */
         case YT.PlayerState.BUFFERING:
           this.player_.trigger('timeupdate');
           this.player_.trigger('waiting');
+          this.player_.trigger('seeking');
           break;
       }
     },
